@@ -3,7 +3,7 @@ import telebot
 from telebot import apihelper
 
 bot = telebot.TeleBot(config.TOKEN)
-# apihelper.proxy = {'https': 'https://192.53.40.221:8080'}
+apihelper.proxy = {'https': 'https://192.53.40.221:8080'}
 
 
 @bot.message_handler(content_types=['text'])
