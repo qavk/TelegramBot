@@ -1,6 +1,0 @@
-TOKEN = '968183382:AAE0xV6PBfYaWjnltpbVPzSG6-yVs3CbRo4'
-my_id = "459148279"
-
-
-
-
