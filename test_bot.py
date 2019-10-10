@@ -1,6 +1,8 @@
+import config
 import telebot
 from telebot import apihelper
 
+bot = telebot.TeleBot(config.TOKEN)
 apihelper.proxy = {'https': 'https://192.53.40.221:8080'}
 
 
@@ -15,7 +17,7 @@ def get_messages(message):
                      "Имя чата: " + str(message.chat.title) + "; " "ID чата: " + str(message.chat.id) + "\n" \
                      "Сообщение: " + str(message.text) + "\n" \
                      "########################################\n"
-    bot.send_message(my_id, output_message)
+    bot.send_message(config.my_id, output_message)
 
 
 bot.polling(none_stop=True)
