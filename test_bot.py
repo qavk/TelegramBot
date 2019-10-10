@@ -20,4 +20,4 @@ def get_messages(message):
     bot.send_message(config.my_id, output_message)
 
 
-bot.polling(none_stop=True)
+bot.polling(none_stop=True, interval=1)
